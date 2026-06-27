@@ -1,0 +1,19 @@
+{
+  "name": "dapp-hardhat-metamask",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "antarmuka"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "node": "npm --workspace backend run node",
+    "compile": "npm --workspace backend run compile",
+    "deploy:local": "npm --workspace backend run deploy:local",
+    "dev": "npm --workspace antarmuka run dev",
+    "build": "npm --workspace antarmuka run build",
+    "start": "node scripts/dev-all.js",
+    "dev:all": "node scripts/dev-all.js"
+  },
+  "type": "module"
+}
